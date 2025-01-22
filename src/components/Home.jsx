@@ -18,7 +18,7 @@ function Home() {
   return (
     <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
       <div className="min-h-screen flex justify-center items-center flex-col snap-start">
-        {/* <TypeAnimation
+        <TypeAnimation
           sequence={[
             "My name is ",
             1000,
@@ -32,7 +32,7 @@ function Home() {
           repeat={Infinity}
           style={{ display: "inline-block" }}
           className="text-2xl md:text-8xl"
-        /> */}
+        />
         <Button children={"Download Resume"} />
       </div>
 
