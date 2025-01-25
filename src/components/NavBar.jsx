@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink , Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useId } from "react";
 
 function NavBar() {
@@ -24,15 +24,13 @@ function NavBar() {
       to: "/projects",
       child: "Projects",
       id: id,
-    }
+    },
   ];
   return (
     <nav className="text-white flex">
-      <ul className="mx-7 flex text-white gap-8 md:flex-col md:items-center text-s md:text-xs">
+      <ul className="mx-7 flex text-white gap-8 flex-col items-center text-xs">
         <li>
-          <Link to={"/#education"}>
-          Education
-          </Link>
+          <a href="/#education">Education</a>
         </li>
         {navItems.map((index, item) => (
           <li id={navItems[item].id}>

@@ -71,3 +71,15 @@
     @apply bg-background text-foreground;
     }
 }
+
+.navbar{
+  @apply bg-black sticky z-20 top-0 flex items-start justify-center w-[30%] min-h-screen py-2 
+}
+
+.softskill-h2{
+  @apply text-center p-2 text-2xl md:text-2xl font-semibold font-sans;
+}
+
+.softskill-card{
+  @apply h-[400px] md:h-[500px] w-full md:w-[430px] transition-colors duration-1000;
+}
