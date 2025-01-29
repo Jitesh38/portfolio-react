@@ -60,9 +60,9 @@ function NavBar() {
           </div>
           <div className="flex justify-center flex-wrap gap-2 text-xs md:text-xl">
             <p className="font-semibold text-center text-white">Hi</p>
-            <p className="animate-bounce">👋</p>
+            <p className="animate-bounce">hi</p>
             <p className="font-semibold text-center text-white">from ,</p>
-            <p className="font-bold text-center text-white text-lg font-mono">&lt; Jitesh /&gt;</p>
+            <p className="font-bold text-center text-white text-sm md:text-lg font-mono">&lt; Jitesh /&gt;</p>
           </div>
         </div>
 
