@@ -2,10 +2,11 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import Button from "./Button";
 import TechnicalSkills from "./TechnicalSkills";
-import Projects from "./Projects";
+import Projects from "./ProjectsPage";
 import SoftSkills from "./SoftSkills";
 import Contact from "./Contact";
 import Education from "./Education";
+import Jitesh from "../assets/photos/jitesh.webp"
 
 function Home() {
   return (
@@ -24,14 +25,17 @@ function Home() {
           cursor={true}
           repeat={Infinity}
           style={{ display: "inline-block" }}
-          className="text-6xl md:text-8xl"
+          className="text-3xl md:text-8xl poppins-medium text-center"
         />
+        {/* <div>
+            <img src={Jitesh} alt="" className="border" />
+        </div> */}
         <div className="mt-20">
           <Button children={"Download Resume"} />
         </div>
       </div>
 
-      <Education />
+      {/* <Education /> */}
       <SoftSkills />
       <TechnicalSkills />
       {/* <Projects /> */}

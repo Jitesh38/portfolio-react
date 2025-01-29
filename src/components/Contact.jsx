@@ -17,33 +17,41 @@ function Contact() {
         Contact me!
       </h2>
       <div className="border-t border-gray-300 w-[50%] m-auto"></div>
-      <div className="w-[50%] m-auto mt-10 flex justify-around ">
+      <div className="w-[50%] m-auto mt-5 md:mt-10 flex justify-around gap-6">
+        <a href="https://www.linkedin.com/in/jitesh-prajapati/" target="_blank">
         <FontAwesomeIcon
           icon={faLinkedin}
           title="LinkedIn"
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-blue-700"
         />
+        </a>
+        <a href="https://github.com/Jitesh38" target="_blank">
         <FontAwesomeIcon
           icon={faGithub}
           title="Github"
           className="cursor-pointer"
         />
+        </a>
+        <a href="https://www.instagram.com/jitesh.prajapati.46/" target="_blank">
         <FontAwesomeIcon
           icon={faInstagram}
           title="Instagram"
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-red-400"
         />
+        </a>
+        <a href="https://wa.me/917226928560" target="_blank">
         <FontAwesomeIcon
           icon={faWhatsapp}
           title="WhatsApp"
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-green-500"
         />
+        </a>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start m-5 p-5 gap-8">
         <div className="">
           <div className="text-3xl m-2 flex items-center font-thin">
-            <FontAwesomeIcon icon={faMapPin} />
-            <p className="text-sm m-1">
+            <FontAwesomeIcon icon={faMapPin} className="text-lg text-red-600" />
+            <p className="md:ext-sm m-1 text-xs">
               1338 , Relief Road , Kalupur , Ahmedabad - 01
             </p>
           </div>
@@ -53,7 +61,7 @@ function Contact() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Google Map"
-            className="w-[400px] h-[300px] lg:w-[500px]"
+            className="w-[300px] h-[300px] lg:w-[500px]"
           ></iframe>
         </div>
         <div className="p-5 flex gap-10 flex-col mt-4">

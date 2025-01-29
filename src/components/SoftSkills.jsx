@@ -11,14 +11,15 @@ function SoftSkills() {
       </h2>
       <div className="border-t border-gray-300 w-[50%] m-auto"></div>
 
-      <div className="group w-full flex flex-row flex-wrap justify-center items-center gap-2 md:gap-0 p-5 transition-colors duration-1000">
-        <div className="softskill-card  bg-cyan-500  group-hover:bg-emerald-500 group-hover:text-white ">
+      <div className="group w-full flex flex-row flex-wrap justify-center items-center  p-5 transition-colors duration-1000 mt-5">
+
+        <div className="softskill-card  bg-cyan-500  group-hover:bg-emerald-500 group-hover:text-white">
           <div className="flex justify-center">
             <img src={clockLogo} alt="" className="w-30" />
           </div>
           <h2 className="softskill-h2">Time Management</h2>
 
-          <p className="text-xl font-normal text-center p-5 leading-normal tracking-wide">
+          <p className="text-xl font-normal text-center p-5 leading-normal tracking-wide poppins-regular">
             " Time management is the process of organizing and planning how to
             divide your time between activities. It can help you be more
             productive, focused, and confident. "
@@ -30,8 +31,8 @@ function SoftSkills() {
             <img src={adaptiveLogo} alt="" className="w-30" />
           </div>
           <h2 className="softskill-h2">Adaptive</h2>
-          <p className="text-xl font-normal text-center p-5 leading-normal tracking-wide">
-         " I am able to collaborate effectively with diverse teams and individuals. "
+          <p className="text-xl font-normal text-center p-5 leading-normal tracking-wide poppins-regular">
+         " I am able to collaborate effectively with diverse teams and individuals. I always focus on solutions rather than problems. "
           </p>
         </div>
 
@@ -40,7 +41,7 @@ function SoftSkills() {
             <img src={learnLogo} alt="" className="w-16 m-3" />
           </div>
           <h2 className="softskill-h2">Willingness to Learn</h2>
-          <p className="text-xl font-normal text-center p-5 leading-normal tracking-wide">" desire to gain knowledge and skills to enhance work performance and achieve professional growth "</p>
+          <p className="text-xl font-normal text-center p-5 leading-normal tracking-wide poppins-regular">"I have desire to gain knowledge and skills to enhance work performance and achieve professional growth "</p>
         </div>
       </div>
     </div>
