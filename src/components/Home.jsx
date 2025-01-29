@@ -30,9 +30,9 @@ function Home() {
         {/* <div>
             <img src={Jitesh} alt="" className="border" />
         </div> */}
-        <div className="mt-20">
+        {/* <div className="mt-20">
           <Button children={"Download Resume"} />
-        </div>
+        </div> */}
       </div>
 
       {/* <Education /> */}

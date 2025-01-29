@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faMapPin, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-
 function Contact() {
   return (
     <div className="min-h-screen w-full snap-start pb-10" id="contact">
@@ -19,32 +18,35 @@ function Contact() {
       <div className="border-t border-gray-300 w-[50%] m-auto"></div>
       <div className="w-[50%] m-auto mt-5 md:mt-10 flex justify-around gap-6">
         <a href="https://www.linkedin.com/in/jitesh-prajapati/" target="_blank">
-        <FontAwesomeIcon
-          icon={faLinkedin}
-          title="LinkedIn"
-          className="cursor-pointer hover:text-blue-700"
-        />
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            title="LinkedIn"
+            className="cursor-pointer hover:text-blue-700"
+          />
         </a>
         <a href="https://github.com/Jitesh38" target="_blank">
-        <FontAwesomeIcon
-          icon={faGithub}
-          title="Github"
-          className="cursor-pointer"
-        />
+          <FontAwesomeIcon
+            icon={faGithub}
+            title="Github"
+            className="cursor-pointer"
+          />
         </a>
-        <a href="https://www.instagram.com/jitesh.prajapati.46/" target="_blank">
-        <FontAwesomeIcon
-          icon={faInstagram}
-          title="Instagram"
-          className="cursor-pointer hover:text-red-400"
-        />
+        <a
+          href="https://www.instagram.com/jitesh.prajapati.46/"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            icon={faInstagram}
+            title="Instagram"
+            className="cursor-pointer hover:text-red-400"
+          />
         </a>
         <a href="https://wa.me/917226928560" target="_blank">
-        <FontAwesomeIcon
-          icon={faWhatsapp}
-          title="WhatsApp"
-          className="cursor-pointer hover:text-green-500"
-        />
+          <FontAwesomeIcon
+            icon={faWhatsapp}
+            title="WhatsApp"
+            className="cursor-pointer hover:text-green-500"
+          />
         </a>
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start m-5 p-5 gap-8">

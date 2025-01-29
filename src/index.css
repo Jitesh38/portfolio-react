@@ -142,3 +142,11 @@
   font-weight: 900;
   font-style: normal;
 }
+
+.clip{
+  clip-path: polygon(0 0, 100% 0%, 89% 100%, 0% 100%);
+}
+
+.clip-2{
+  clip-path: polygon(11% 0, 100% 0%, 100% 100%, 0% 100%);
+}
