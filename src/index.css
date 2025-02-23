@@ -150,3 +150,14 @@
 .clip-2{
   clip-path: polygon(11% 0, 100% 0%, 100% 100%, 0% 100%);
 }
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    }
+  body {
+    @apply bg-background text-foreground;
+    }
+}

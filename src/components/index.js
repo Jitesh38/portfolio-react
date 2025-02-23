@@ -4,6 +4,8 @@ import Education from "./Education"
 import ProjectsPage from "./ProjectsPage";
 import TimeLine from "./TimeLine";
 import NavBar from "./NavBar";
+import Testimonials from "./Testimonials";
+import TestimonialForm from "./TestimonialForm";
 
 export {
     Home,
@@ -11,5 +13,7 @@ export {
     ProjectsPage,
     TimeLine,
     NavBar,
-    Skills    
+    Skills,
+    Testimonials,
+    TestimonialForm
 }

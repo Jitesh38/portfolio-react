@@ -28,6 +28,11 @@ function NavBar() {
       child: "Projects",
       id: 3,
     },
+    {
+      to: "/testimonials",
+      child: "Testimonial",
+      id: 4,
+    },
   ];
   return (
     <>

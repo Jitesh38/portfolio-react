@@ -10,7 +10,6 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import project from "./project_data";
-import reactLogo from "../assets/svg/react.svg";
 
 function ProjectsPage() {
   const [selectedValue, setSelectedValue] = useState("All"); // Default value
