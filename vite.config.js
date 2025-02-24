@@ -13,5 +13,5 @@ export default defineConfig({
   build: {
     commonjsOptions: { transformMixedEsModules: true } // Change
   },
-  base: "/portfolio-react"
+  // base: "/portfolio-react"
 })

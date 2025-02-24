@@ -6,9 +6,7 @@ function App() {
   return (
     <>
       <div className="flex flex-row">
-      
         <NavBar />
-      
 
         <div className="w-full text-white text-4xl">
           <SquaresDemo />
