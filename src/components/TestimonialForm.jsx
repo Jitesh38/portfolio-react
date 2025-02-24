@@ -42,14 +42,14 @@ function TestimonialForm() {
 
   return (
     <div>
-      <div className="mt-14">
+      <div className="mt-16 flex justify-center items-center">
         <form
           action=""
           onSubmit={(e) => {
             e.preventDefault();
             formSubmit();
           }}
-          className="text-sm  flex justify-center items-center flex-col gap-10"
+          className="text-sm  flex justify-center items-center flex-col gap-10 w-[80%]"
         >
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="name">Name</Label>
