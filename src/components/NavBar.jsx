@@ -48,7 +48,7 @@ function NavBar() {
         </button>
       </div>
 
-      <div className={`${isNavbarOpen ? "navbar" : "hidden"}`} id="NavBar">
+      <div className={`${isNavbarOpen ? "navbar" : "hide_navbar"}`} id="NavBar">
         {/* cancel button */}
         <div className="w-full flex justify-end px-2 md:px-5">
           <button className="text-white" onClick={handleCancel}>
@@ -83,6 +83,7 @@ function NavBar() {
                   className={({ isActive }) =>
                     `${isActive ? "text-white font-medium" : "text-slate-400"}`
                   }
+                  onClick={handleCancel}
                 >
                   {item.child}
                 </NavLink>
