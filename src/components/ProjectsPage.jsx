@@ -49,7 +49,7 @@ function ProjectsPage() {
             className="h-[27rem] w-[25rem] text-8xl flex rounded-lg flex-col  bg-gray-900 hover:shadow-sm hover:shadow-slate-500 "
             key={item.id}
           >
-            <img
+            <img loading="lazy"
               src={item.img}
               alt=""
               className="h-auto w-auto rounded-t-lg mt-0"

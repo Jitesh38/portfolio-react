@@ -6,14 +6,17 @@ import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
 function Testimonials() {
   const [testimonial, setTestimonial] = useState([]);
-
+  
+  // const setTestimonial  = useStore((state)=>state.setTestimonial);
+  // const  testimonial = useStore((state)=>state.testimonial);
+  
   useEffect(() => {
     service.allTestimonial().then((data) => {
       if (data) {
         const displayItems = data.documents.filter(
           (item) => item.display == true
         );
-        setTestimonial(displayItems);
+        setTestimonial(displayItems);    
       }
     });
   }, []);
@@ -30,7 +33,7 @@ function Testimonials() {
               className="md:flex rounded-xl p-8 md:p-0 bg-slate-800 w-full md:w-auto" 
               key={item.$id}
             >
-              <img
+              <img loading="lazy"
                 className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto md:rounded-l-xl"
                 src={service.getFilePreview(item.img_id)}
                 alt=""
