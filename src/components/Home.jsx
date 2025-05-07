@@ -14,12 +14,12 @@ function Home() {
       <div className="min-h-screen flex justify-center items-center flex-col snap-start">
         <TypeAnimation
           sequence={[
-            "My name is ",
-            1000,
+            // "My name is ",
+            // 1000,
             "Jitesh Prajapati",
             2000,
-            "Software Developer",
-            3000,
+            // "Software Developer",
+            // 3000,
           ]}
           wrapper="span"
           cursor={true}

@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { SquaresDemo } from "../src/components/SquaresDemo";
 import { NavBar } from "./components";
+import TestimonialContextProvider from "./context/TestimonialContextProvider";
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         <div className="w-full text-white text-4xl">
           <SquaresDemo />
           <div className="relative z-10 text-white">
-            <Outlet />
+            <TestimonialContextProvider>
+              <Outlet />
+            </TestimonialContextProvider>
           </div>
         </div>
       </div>

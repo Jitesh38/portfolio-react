@@ -45,7 +45,12 @@ export class Service {
     }
 
     getFilePreview(fileId) {
-        return this.bucket.getFilePreview(conf.bucket_id, fileId)
+        try {
+            return this.bucket.getFilePreview(conf.bucket_id, fileId)            
+        } catch (error) {
+            console.log('appwrite :: getfile :: ',error)
+            return false
+        }
     }
 }
 
