@@ -15,7 +15,7 @@ import {
   HashRouter,
   Route,
   Routes,
-  RouterProvider
+  RouterProvider,
 } from "react-router-dom";
 
 const router = createBrowserRouter(
@@ -32,18 +32,5 @@ const router = createBrowserRouter(
 );
 
 createRoot(document.getElementById("root")).render(
-  // <HashRouter>
-  //   <Routes>
-  //     <Route path="/" element={<App />}>
-  //       <Route index element={<Home />} />
-  //       <Route path="education" element={<Education />} />
-  //       <Route path="skills" element={<Skills />} />
-  //       <Route path="projects" element={<ProjectsPage />} />
-  //       <Route path="testimonials" element={<Testimonials />} />
-  //       <Route path="testimonials" element={<Testimonials />} />
-  //       <Route path="add-testimonial" element={<TestimonialForm />} />
-  //     </Route>
-  //   </Routes>
-  // </HashRouter>
   <RouterProvider router={router} />
 );

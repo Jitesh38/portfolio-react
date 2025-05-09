@@ -8,6 +8,8 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faMapPin, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import resume from "../assets/resume/Jitesh_Frontend.pdf"
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -89,15 +91,12 @@ function Contact() {
               </div>
             </div>
             <div className="flex justify-start ">
+              <Link to={resume} target="_blank"> 
               <Button children={"Download Resume"} />
+              </Link>
             </div>
           </div>
         </div>
-
-        {/* Footer */}
-        {/* <div className="bg-gray-900 h-[50px] text-white">
-      
-    </div> */}
       </div>
     </>
   );
