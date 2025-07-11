@@ -4,6 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import axios from "axios";
+import conf from "../conf/conf";
 
 function TestimonialForm() {
   const [name, setName] = useState("");
@@ -12,39 +14,50 @@ function TestimonialForm() {
   const [img, setImg] = useState();
   const [loading, setLoading] = useState(false);
 
-  const formSubmit = () => {
+  const formSubmit = async () => {
     if (!name || !designation || !testimonial || !img) {
       alert("All fields are required.");
       return;
     }
     setLoading(true);
-    console.log("form invoked");
-    service.uploadFile(img).then((img_detail) => {
-      const img_id = img_detail.$id;
-      if (img_id) {
-        service
-          .createTestimonial({ name, designation, testimonial, img_id })
-          .then(() => {
-            alert("Your Testimonial is submitted successfully.");
-            setName("");
-            setDesignation("");
-            setTestimonial("");
-            setImg();
-            setLoading(false);
-          })
-          .catch((error) => {
-            console.log(error);
-            setLoading(false);
-          });
-      }
-    });
+    const data = new FormData();
+    data.append("file", img);
+    data.append("upload_preset", "my-portfolio");
+    axios
+      .post(
+        `https://api.cloudinary.com/v1_1/${conf.cloud_name}/image/upload`,
+        data
+      )
+      .then((res) => {
+        const img_id = res.data.secure_url;
+        if (img_id) {
+          service
+            .createTestimonial({ name, designation, testimonial, img_id })
+            .then(() => {
+              alert("Your Testimonial is submitted successfully.");
+              setName("");
+              setDesignation("");
+              setTestimonial("");
+              setImg();
+              setLoading(false);
+            })
+            .catch((error) => {
+              console.log(error);
+              alert("Error Please try again later !");
+              setLoading(false);
+            });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("Error Please try again later !");
+      });
   };
 
   return (
     <div>
       <div className="mt-16 flex justify-center items-center">
         <form
-          action=""
           onSubmit={(e) => {
             e.preventDefault();
             formSubmit();

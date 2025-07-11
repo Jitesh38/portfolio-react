@@ -1,9 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faQuoteRight,
-  faQuoteLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faQuoteRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import cLogo from "../assets/svg/C.svg";
 import pythonLogo from "../assets/svg/python.svg";
@@ -19,6 +16,10 @@ import gitLogo from "../assets/svg/git.svg";
 import vscodeLogo from "../assets/svg/vscode.svg";
 import postmanLogo from "../assets/svg/postman.svg";
 import appwriteLogo from "../assets/svg/appwrite.svg";
+import nodeLogo from "../assets/svg/node.svg";
+import expressLogo from "../assets/svg/express.svg";
+import mongoLogo from "../assets/svg/mongodb.svg";
+import sqlLogo from "../assets/svg/sql.svg";
 
 function TechnicalSkills() {
   return (
@@ -49,7 +50,7 @@ function TechnicalSkills() {
         <div className="flex  gap-2 items-center hover:text-black hover:bg-white rounded-lg p-2 animate-bounce hover:animate-none  ">
           <h5 className="text-lg font-semibold">Programming Languages:</h5>
           {/* language logo and text */}
-          <div >
+          <div>
             <img
               src={cLogo}
               alt="C language"
@@ -171,7 +172,7 @@ function TechnicalSkills() {
         {/* individual skill end */}
 
         {/* individual skill start */}
-        <div className="flex gap-2 items-center  hover:text-black hover:bg-white rounded-lg p-2 animate-bounce hover:animate-none">
+        <div className="flex gap-2 items-center bg- hover:text-black hover:bg-white rounded-lg p-2 animate-bounce hover:animate-none">
           <h5 className="text-lg font-semibold">Framework:</h5>
           {/* language logo and text */}
           <div>
@@ -182,7 +183,48 @@ function TechnicalSkills() {
               className="text-sm"
               width={"50rem"}
             />
-            <h2></h2>
+          </div>
+          <div>
+            <img
+              src={nodeLogo}
+              alt="Node Js"
+              title="Node Js"
+              className="text-sm"
+              width={"50rem"}
+            />
+          </div>
+          <div>
+            <img
+              src={expressLogo}
+              alt="Express JS"
+              title="Express JS"
+              className="text-sm"
+              width={"37rem"}
+            />
+          </div>
+        </div>
+        {/* individual skill end */}
+        {/* individual skill start */}
+        <div className="flex gap-2 items-center  hover:text-black hover:bg-white rounded-lg p-2 animate-bounce hover:animate-none">
+          <h5 className="text-lg font-semibold">Database:</h5>
+          {/* language logo and text */}
+          <div>
+            <img
+              src={mongoLogo}
+              alt="Mongo DB"
+              title="MongoDB"
+              className="text-sm"
+              width={"50rem"}
+            />
+          </div>
+          <div>
+            <img
+              src={sqlLogo}
+              alt="SQL"
+              title="SQL"
+              className="text-sm"
+              width={"40rem"}
+            />
           </div>
         </div>
         {/* individual skill end */}
@@ -203,22 +245,18 @@ function TechnicalSkills() {
           </div>
 
           <div>
-            <div className="text-4xl"
-              width={"50rem"}>
-          <FontAwesomeIcon icon={faGithub} />
-          </div>
-
-            <h2></h2>
+            <div className="text-4xl" width={"50rem"}>
+              <FontAwesomeIcon icon={faGithub} alt="Github" title="GitHub" />
+            </div>
           </div>
         </div>
         {/* individual skill end */}
 
-        
         {/* individual skill start */}
         <div className="flex gap-4 items-center  hover:text-black hover:bg-white rounded-lg p-2 animate-bounce hover:animate-none">
           <h5 className="text-lg font-semibold">Tools:</h5>
           {/* language logo and text */}
-          <div>
+          {/* <div>
             <img
               src={vscodeLogo}
               alt="VS Code"
@@ -226,8 +264,7 @@ function TechnicalSkills() {
               className="text-sm"
               width={"40rem"}
             />
-            <h2></h2>
-          </div>
+          </div> */}
           <div>
             <img
               src={postmanLogo}
@@ -236,7 +273,6 @@ function TechnicalSkills() {
               className="text-sm"
               width={"40rem"}
             />
-            <h2></h2>
           </div>
           <div>
             <img
@@ -246,7 +282,6 @@ function TechnicalSkills() {
               className="text-sm"
               width={"45rem"}
             />
-            <h2></h2>
           </div>
         </div>
         {/* individual skill end */}

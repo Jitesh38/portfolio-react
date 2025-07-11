@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -46,10 +45,11 @@ function ProjectsPage() {
       <div className="w-full flex justify-center flex-row flex-wrap  p-5 gap-5">
         {filteredProjects.map((item) => (
           <div
-            className="h-[27rem] w-[25rem] text-8xl flex rounded-lg flex-col  bg-gray-900 hover:shadow-sm hover:shadow-slate-500 "
+            className="h-[27rem] w-[25rem] text-8xl flex rounded-lg flex-col  bg-gray-900 hover:shadow-sm hover:shadow-slate-500 overflow-hidden"
             key={item.id}
           >
-            <img loading="lazy"
+            <img
+              loading="lazy"
               src={item.img}
               alt=""
               className="h-auto w-auto rounded-t-lg mt-0"
@@ -75,16 +75,11 @@ function ProjectsPage() {
                   <p>{tech.name}</p>
                 </div>
               ))}
-
-              {/* <div className="text-xs flex items-center gap-1 bg-blue-200 text-blue-600 rounded-md p-1 ">
-                <img src={reactLogo} alt="" className="w-5" />
-                <p>React</p>
-              </div> */}
             </div>
             <div className="border-t border-gray-600 w-[90%] mx-auto mt-1 mb-1 pb-2"></div>
 
             <div className="pl-4 pr-1">
-              <p className="text-sm text-slate-300 leading-normal tracking-wide">
+              <p className="text-sm text-slate-300 leading-normal tracking-wide ">
                 {item.content}
               </p>
             </div>

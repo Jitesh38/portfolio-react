@@ -12,9 +12,7 @@ import {
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  HashRouter,
   Route,
-  Routes,
   RouterProvider,
 } from "react-router-dom";
 

@@ -11,6 +11,8 @@ import password_generator from "../assets/projects/react/password_generator.png"
 import currency_converter from "../assets/projects/react/currency_converter.png";
 import expense_tracker from "../assets/projects/react/expense_tracker.png";
 
+//mern stack
+import videotube from "../assets/projects/mern/videoTube.png"
 
 import cLogo from "../assets/svg/C.svg";
 import pythonLogo from "../assets/svg/python.svg";
@@ -26,6 +28,11 @@ import gitLogo from "../assets/svg/git.svg";
 import vscodeLogo from "../assets/svg/vscode.svg";
 import postmanLogo from "../assets/svg/postman.svg";
 import appwriteLogo from "../assets/svg/appwrite.svg";
+import nodeLogo from "../assets/svg/node.svg"
+import expressLogo from "../assets/svg/express.svg"
+import mongoLogo from "../assets/svg/mongodb.svg"
+import sqlLogo from "../assets/svg/sql.svg"
+
 
 
 
@@ -200,10 +207,35 @@ const project = [
         link: "https://jitesh38.github.io/expense-tracker/",
         technologies: [{
             name: "React",
-            logo: reactLogo,    
+            logo: reactLogo,
             color: "bg-blue-200 text-blue-600"
         }],
         category: "Frontend"
+    },
+    {
+        id: 10,
+        img: videotube,
+        title: "VideoTube",
+        content: "Developed a YouTube-like video-sharing platform with user authentication, video uploads, likes,comments, playlists, and subscriptions using React, Node.js, Express, and MongoDB.",
+        link: "https://github.com/Jitesh38/VideoTube",
+        technologies: [
+            {
+                name: "React",
+                logo: reactLogo,
+                color: "bg-blue-200 text-blue-600"
+            },
+            {
+                name: "Node",
+                logo: nodeLogo,
+                color: "bg-gray-200 text-slate-600"
+            },
+            {
+                name: "MongoDB",
+                logo: mongoLogo,
+                color: "bg-lime-200 text-slate-600"
+            },
+        ],
+        category: "Backend"
     },
 ]
 

@@ -67,7 +67,9 @@ function NavBar() {
             <p className="font-semibold text-center text-white">Hi</p>
             <p className="animate-bounce">👋</p>
             <p className="font-semibold text-center text-white">from ,</p>
-            <p className="font-bold text-center text-white text-sm md:text-lg font-mono">&lt; Jitesh /&gt;</p>
+            <p className="font-bold text-center text-white text-sm md:text-lg font-mono">
+              &lt; Jitesh /&gt;
+            </p>
           </div>
         </div>
 
