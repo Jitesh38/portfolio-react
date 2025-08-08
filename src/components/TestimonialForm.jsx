@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import axios from "axios";
 import conf from "../conf/conf";
+import { useNavigate } from "react-router-dom";
 
 function TestimonialForm() {
   const [name, setName] = useState("");
@@ -13,6 +14,7 @@ function TestimonialForm() {
   const [testimonial, setTestimonial] = useState("");
   const [img, setImg] = useState();
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const formSubmit = async () => {
     if (!name || !designation || !testimonial || !img) {
@@ -40,6 +42,7 @@ function TestimonialForm() {
               setTestimonial("");
               setImg();
               setLoading(false);
+              navigate('/')
             })
             .catch((error) => {
               console.log(error);
@@ -99,11 +102,10 @@ function TestimonialForm() {
 
           <div className="grid w-full max-w-sm items-center gap-1.5">
             <Label htmlFor="picture">Picture</Label>
-            <Input
+            <Input              
               type="file"
               id="picture"
-              placeholder="Picture"
-              // value={img}
+              placeholder="Select File to Upload"              
               onChange={(e) => setImg(e.target.files[0])}
             />
           </div>
