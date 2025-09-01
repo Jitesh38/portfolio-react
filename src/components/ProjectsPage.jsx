@@ -42,7 +42,7 @@ function ProjectsPage() {
         </Select>
       </div>
 
-      <div className="w-full flex justify-center flex-row flex-wrap  p-5 gap-5">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center p-5 gap-5">
         {filteredProjects.map((item) => (
           <div
             className="h-[27rem] w-[25rem] text-8xl flex rounded-lg flex-col  bg-gray-900 hover:shadow-sm hover:shadow-slate-500 overflow-hidden"
